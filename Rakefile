@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "string_width"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{String#width}
+    gem.description = %Q{Get Width of Unicode Characters.}
     gem.email = "jugyo.org@gmail.com"
     gem.homepage = "http://github.com/jugyo/string_width"
     gem.authors = ["jugyo"]
     gem.add_development_dependency "rspec"
+    gem.files = %w(Rakefile README.rdoc VERSION LICENSE) + Dir["{lib,spec}/**/*.{rb,txt}"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
 rescue LoadError
